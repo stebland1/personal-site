@@ -1,20 +1,26 @@
 import React from 'react';
 
 // Components
-import Nav from './Nav';
+import Header from './Header';
 import Footer from './Footer';
 
 // Styles
+import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
-import 'normalize.css';
+import styled from 'styled-components';
+
+const MainStyled = styled.main`
+  max-width: 1440px;
+  margin: 0 auto;
+`;
 
 const Layout = ({ children }) => (
   <>
     <GlobalStyles />
     <Typography />
-    <Nav />
-    {children}
+    <Header />
+    <MainStyled>{children}</MainStyled>
     <Footer />
   </>
 );
