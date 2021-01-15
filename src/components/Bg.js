@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+import spaceTexture from '../assets/img/space-texture.png';
+import personTexture from '../assets/img/person-texture.png';
+
 // Styles
 const StyledBg = styled.svg`
   position: absolute;
@@ -10,6 +13,7 @@ const StyledBg = styled.svg`
   transform: translateX(-50%);
   transform-origin: center;
   z-index: -1;
+  top: 0;
 `;
 
 // Transitions
@@ -77,6 +81,21 @@ const Bg = () => {
           class="cls-1"
           style={{ fill: 'url(#linear-gradient)' }}
         />
+        <g
+          xmlns="http://www.w3.org/2000/svg"
+          class="cls-3"
+          style={{ mixBlendMode: 'multiply', opacity: '0.2' }}
+        >
+          <motion.image
+            variants={spaceVariants}
+            initial="stateA"
+            animate="stateB"
+            width="850"
+            height="1053"
+            transform="translate(-34 -37)"
+            href={spaceTexture}
+          />
+        </g>
       </g>
       <motion.g
         id="person"
@@ -122,6 +141,21 @@ const Bg = () => {
             class="cls-5"
             fill="#3d3d3d"
             d="M463.67,1010.19a15.32,15.32,0,0,1,4.14-6,19.79,19.79,0,0,1,6.29-4,21.8,21.8,0,0,1,7.28-1.42,10.27,10.27,0,0,1,1.84,0l1.83.15a34.68,34.68,0,0,1,3.56.8c-1.22.12-2.41.1-3.59.18l-1.76.18-.88.07c-.29,0-.58.1-.86.14-.58.11-1.15.2-1.73.28s-1.12.28-1.68.42l-.84.19c-.28.08-.55.18-.82.27-.54.19-1.09.35-1.62.57a26.6,26.6,0,0,0-6,3.3A27.55,27.55,0,0,0,463.67,1010.19Z"
+          />
+        </g>
+        <g
+          xmlns="http://www.w3.org/2000/svg"
+          class="cls-8"
+          style={{ mixBlendMode: 'multiply', opacity: '0.1' }}
+        >
+          <motion.image
+            variants={personVariants}
+            initial="stateA"
+            animate="stateB"
+            width="274"
+            height="208"
+            transform="translate(299 905)"
+            href={personTexture}
           />
         </g>
       </motion.g>

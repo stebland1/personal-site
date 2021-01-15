@@ -15,6 +15,18 @@ const Typography = createGlobalStyle`
     font-family: 'Sporting Grotesque';
     text-transform: lowercase;
   }
+
+  h1 {
+    font-family: 'Cosi Azure', sans-serif;
+    color: var(--white);
+    margin: 0;
+    font-size: 8rem;
+  }
+
+  p {
+    color: var(--white);
+    line-height: 1.2;
+  }
 `;
 
 export default Typography;

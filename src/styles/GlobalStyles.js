@@ -58,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
 
   header, 
   footer {
-    position: absolute;
+    position: fixed;
     padding: 0 2rem;
     height: 50px;
     width: 100%;

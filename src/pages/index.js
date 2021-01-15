@@ -4,16 +4,14 @@ import { motion } from 'framer-motion';
 
 import { FaPaperPlane } from 'react-icons/fa';
 
-import Bg from '../components/Bg';
-
 const StyledHero = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   line-height: 0.8;
   text-align: center;
+  height: 100%;
 `;
 
 const StyledH1 = styled(motion.h1)`
@@ -22,8 +20,7 @@ const StyledH1 = styled(motion.h1)`
   color: var(--white);
   margin: 0;
   line-height: 1;
-  z-index: 1.1;
-  will-change: opacity;
+  z-index: 1;
 `;
 
 const StyledSlogan = styled.p`
@@ -78,7 +75,6 @@ const h1Variants2 = {
 const Home = () => {
   return (
     <>
-      <Bg />
       <StyledHero>
         <StyledH1>
           <StyledSpan variants={h1Variants} initial="stateA" animate="stateB">
