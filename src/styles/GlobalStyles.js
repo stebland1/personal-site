@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --silver: #dddddd;
+    --silver: #757575;
     --white: #ffffff;
     --gold: #F9982A;
     --black: #222222;
@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    cursor: none;
   }
 
   body {

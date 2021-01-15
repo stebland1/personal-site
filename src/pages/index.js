@@ -17,9 +17,9 @@ const StyledHero = styled.div`
 const StyledH1 = styled(motion.h1)`
   font-family: 'Cosi Azure', sans-serif;
   font-size: 7rem;
-  color: var(--white);
+  color: var(--silver);
   margin: 0;
-  line-height: 1;
+  line-height: 1.1;
   z-index: 1;
 `;
 
